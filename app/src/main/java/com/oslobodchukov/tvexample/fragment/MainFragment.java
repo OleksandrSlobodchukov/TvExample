@@ -14,12 +14,6 @@
 
 package com.oslobodchukov.tvexample.fragment;
 
-import java.net.URI;
-import java.util.Collections;
-import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -50,15 +44,22 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.GlideDrawable;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
-import com.oslobodchukov.tvexample.presenter.CardPresenter;
-import com.oslobodchukov.tvexample.entity.Movie;
-import com.oslobodchukov.tvexample.entity.MovieList;
 import com.oslobodchukov.tvexample.R;
 import com.oslobodchukov.tvexample.activity.BrowseErrorActivity;
 import com.oslobodchukov.tvexample.activity.DetailsActivity;
+import com.oslobodchukov.tvexample.entity.Movie;
+import com.oslobodchukov.tvexample.entity.MovieList;
+import com.oslobodchukov.tvexample.presenter.CardPresenter;
+
+import java.net.URI;
+import java.util.Collections;
+import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainFragment
         extends BrowseFragment {
+
     private static final String TAG = "MainFragment";
 
     private static final int BACKGROUND_UPDATE_DELAY = 300;

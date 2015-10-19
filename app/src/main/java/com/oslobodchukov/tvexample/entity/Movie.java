@@ -20,104 +20,50 @@ import java.io.Serializable;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /*
  * Movie class represents video entity with title, description, image thumbs and video url.
  *
  */
 public class Movie
         implements Serializable {
+
     static final long serialVersionUID = 727566175075960653L;
+
+    @Getter
     private static long count = 0;
+    @Getter @Setter
     private long id;
+    @Getter @Setter
     private String title;
+    @Getter @Setter
     private String description;
-    private String bgImageUrl;
+    @Getter @Setter
+    private String backgroundImageUrl;
+    @Getter @Setter
     private String cardImageUrl;
+    @Getter @Setter
     private String videoUrl;
+    @Getter @Setter
     private String studio;
+    @Getter @Setter
     private String category;
 
     public Movie() {
-    }
-
-    public static long getCount() {
-        return count;
     }
 
     public static void incCount() {
         count++;
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getStudio() {
-        return studio;
-    }
-
-    public void setStudio(String studio) {
-        this.studio = studio;
-    }
-
-    public String getVideoUrl() {
-        return videoUrl;
-    }
-
-    public void setVideoUrl(String videoUrl) {
-        this.videoUrl = videoUrl;
-    }
-
-    public String getBackgroundImageUrl() {
-        return bgImageUrl;
-    }
-
-    public void setBackgroundImageUrl(String bgImageUrl) {
-        this.bgImageUrl = bgImageUrl;
-    }
-
-    public String getCardImageUrl() {
-        return cardImageUrl;
-    }
-
-    public void setCardImageUrl(String cardImageUrl) {
-        this.cardImageUrl = cardImageUrl;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
     public URI getBackgroundImageURI() {
         try {
-            Log.d("BACK MOVIE: ", bgImageUrl);
+            Log.d("BACK MOVIE: ", backgroundImageUrl);
             return new URI(getBackgroundImageUrl());
         } catch (URISyntaxException e) {
-            Log.d("URI exception: ", bgImageUrl);
+            Log.d("URI exception: ", backgroundImageUrl);
             return null;
         }
     }
@@ -136,7 +82,7 @@ public class Movie
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", videoUrl='" + videoUrl + '\'' +
-                ", backgroundImageUrl='" + bgImageUrl + '\'' +
+                ", backgroundImageUrl='" + backgroundImageUrl + '\'' +
                 ", backgroundImageURI='" + getBackgroundImageURI().toString() + '\'' +
                 ", cardImageUrl='" + cardImageUrl + '\'' +
                 '}';

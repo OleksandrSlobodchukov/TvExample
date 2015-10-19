@@ -37,8 +37,8 @@ import com.oslobodchukov.tvexample.R;
  */
 public class PlaybackOverlayActivity
         extends Activity
-        implements
-        PlaybackOverlayFragment.OnPlayPauseClickedListener {
+        implements PlaybackOverlayFragment.OnPlayPauseClickedListener {
+
     private static final String TAG = "PlaybackOverlayActivity";
 
     private VideoView mVideoView;

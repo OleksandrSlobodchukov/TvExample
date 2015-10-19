@@ -27,12 +27,15 @@ import android.widget.ProgressBar;
 import com.oslobodchukov.tvexample.fragment.ErrorFragment;
 import com.oslobodchukov.tvexample.R;
 
+import java.util.concurrent.TimeUnit;
+
 /*
  * BrowseErrorActivity shows how to use ErrorFragment
  */
 public class BrowseErrorActivity
         extends Activity {
-    private static int TIMER_DELAY = 3000;
+
+    private static final long TIMER_DELAY = TimeUnit.SECONDS.toMillis(3);
     private static int SPINNER_WIDTH = 100;
     private static int SPINNER_HEIGHT = 100;
 

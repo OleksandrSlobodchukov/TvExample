@@ -61,6 +61,7 @@ import java.util.List;
  */
 public class VideoDetailsFragment
         extends DetailsFragment {
+
     private static final String TAG = "VideoDetailsFragment";
 
     private static final int ACTION_WATCH_TRAILER = 1;

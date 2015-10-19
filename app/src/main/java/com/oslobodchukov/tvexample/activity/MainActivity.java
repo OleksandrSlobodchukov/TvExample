@@ -24,6 +24,7 @@ import com.oslobodchukov.tvexample.R;
  */
 public class MainActivity
         extends Activity {
+
     /**
      * Called when the activity is first created.
      */

@@ -30,6 +30,7 @@ import com.oslobodchukov.tvexample.R;
  */
 public class CardPresenter
         extends Presenter {
+
     private static final String TAG = "CardPresenter";
 
     private static int CARD_WIDTH = 313;

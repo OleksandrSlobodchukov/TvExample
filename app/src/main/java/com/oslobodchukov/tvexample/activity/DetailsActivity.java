@@ -24,6 +24,7 @@ import com.oslobodchukov.tvexample.R;
  */
 public class DetailsActivity
         extends Activity {
+
     public static final String SHARED_ELEMENT_NAME = "hero";
     public static final String MOVIE = "Movie";
 
