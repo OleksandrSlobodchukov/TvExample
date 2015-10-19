@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.oslobodchukov.tvexample;
+package com.oslobodchukov.tvexample.entity;
 
 import android.util.Log;
 

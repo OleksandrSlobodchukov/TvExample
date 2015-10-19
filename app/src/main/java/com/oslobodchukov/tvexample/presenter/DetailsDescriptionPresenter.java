@@ -12,23 +12,23 @@
  * the License.
  */
 
-package com.oslobodchukov.tvexample;
+package com.oslobodchukov.tvexample.presenter;
 
-import android.app.Activity;
-import android.os.Bundle;
+import android.support.v17.leanback.widget.AbstractDetailsDescriptionPresenter;
 
-/*
- * MainActivity class that loads MainFragment
- */
-public class MainActivity
-        extends Activity {
-    /**
-     * Called when the activity is first created.
-     */
+import com.oslobodchukov.tvexample.entity.Movie;
+
+public class DetailsDescriptionPresenter
+        extends AbstractDetailsDescriptionPresenter {
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected void onBindDescription(ViewHolder viewHolder, Object item) {
+        Movie movie = (Movie) item;
+
+        if (movie != null) {
+            viewHolder.getTitle().setText(movie.getTitle());
+            viewHolder.getSubtitle().setText(movie.getStudio());
+            viewHolder.getBody().setText(movie.getDescription());
+        }
     }
 }

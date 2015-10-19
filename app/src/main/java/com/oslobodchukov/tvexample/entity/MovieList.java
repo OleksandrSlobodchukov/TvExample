@@ -1,4 +1,4 @@
-package com.oslobodchukov.tvexample;
+package com.oslobodchukov.tvexample.entity;
 
 import java.util.ArrayList;
 import java.util.List;

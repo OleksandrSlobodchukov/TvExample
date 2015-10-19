@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.oslobodchukov.tvexample;
+package com.oslobodchukov.tvexample.fragment;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -42,6 +42,15 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.GlideDrawable;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
+import com.oslobodchukov.tvexample.presenter.CardPresenter;
+import com.oslobodchukov.tvexample.presenter.DetailsDescriptionPresenter;
+import com.oslobodchukov.tvexample.entity.Movie;
+import com.oslobodchukov.tvexample.entity.MovieList;
+import com.oslobodchukov.tvexample.R;
+import com.oslobodchukov.tvexample.utils.Utils;
+import com.oslobodchukov.tvexample.activity.DetailsActivity;
+import com.oslobodchukov.tvexample.activity.MainActivity;
+import com.oslobodchukov.tvexample.activity.PlaybackOverlayActivity;
 
 import java.util.Collections;
 import java.util.List;

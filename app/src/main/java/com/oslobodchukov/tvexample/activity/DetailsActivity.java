@@ -12,10 +12,12 @@
  * the License.
  */
 
-package com.oslobodchukov.tvexample;
+package com.oslobodchukov.tvexample.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.oslobodchukov.tvexample.R;
 
 /*
  * Details activity class that loads LeanbackDetailsFragment class

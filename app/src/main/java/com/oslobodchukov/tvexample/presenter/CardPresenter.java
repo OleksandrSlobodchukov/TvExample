@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.oslobodchukov.tvexample;
+package com.oslobodchukov.tvexample.presenter;
 
 import android.graphics.drawable.Drawable;
 import android.support.v17.leanback.widget.ImageCardView;
@@ -21,6 +21,8 @@ import android.util.Log;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
+import com.oslobodchukov.tvexample.entity.Movie;
+import com.oslobodchukov.tvexample.R;
 
 /*
  * A CardPresenter is used to generate Views and bind Objects to them on demand. 

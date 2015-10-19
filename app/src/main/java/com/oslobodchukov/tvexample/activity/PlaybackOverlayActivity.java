@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.oslobodchukov.tvexample;
+package com.oslobodchukov.tvexample.activity;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -28,6 +28,9 @@ import android.widget.VideoView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
+import com.oslobodchukov.tvexample.entity.Movie;
+import com.oslobodchukov.tvexample.fragment.PlaybackOverlayFragment;
+import com.oslobodchukov.tvexample.R;
 
 /**
  * PlaybackOverlayActivity for video playback that loads PlaybackOverlayFragment

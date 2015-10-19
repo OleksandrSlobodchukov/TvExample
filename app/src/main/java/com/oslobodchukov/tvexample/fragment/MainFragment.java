@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.oslobodchukov.tvexample;
+package com.oslobodchukov.tvexample.fragment;
 
 import java.net.URI;
 import java.util.Collections;
@@ -50,6 +50,12 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.GlideDrawable;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
+import com.oslobodchukov.tvexample.presenter.CardPresenter;
+import com.oslobodchukov.tvexample.entity.Movie;
+import com.oslobodchukov.tvexample.entity.MovieList;
+import com.oslobodchukov.tvexample.R;
+import com.oslobodchukov.tvexample.activity.BrowseErrorActivity;
+import com.oslobodchukov.tvexample.activity.DetailsActivity;
 
 public class MainFragment
         extends BrowseFragment {

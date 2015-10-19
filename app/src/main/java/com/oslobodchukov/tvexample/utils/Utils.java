@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.oslobodchukov.tvexample;
+package com.oslobodchukov.tvexample.utils;
 
 import android.app.AlertDialog;
 import android.content.Context;
